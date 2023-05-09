@@ -20,8 +20,7 @@ class UpdateStatus implements ResolverInterface
         $this->_group = $group;
         $this->orderFactory = $orderFactory;
     }
-   
-    public function resolve(
+        public function resolve(
         Field $field,
         $context,
         ResolveInfo $info,
