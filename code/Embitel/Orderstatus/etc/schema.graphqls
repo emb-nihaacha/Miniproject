@@ -1,0 +1,13 @@
+type Mutation {
+    addStatus(input: StatusInput! @doc(description:"An input you have to fill")):
+    addStatusOutput @resolver(class:"Embitel\\Orderstatus\\Model\\Resolver\\UpdateStatus")
+    @doc (description:"output of mutation")
+}
+input StatusInput {
+    order_id:String! @doc(description:"enter the orderid")
+    
+}
+type addStatusOutput {
+    order_id:String! @doc(description:"status of mutation")
+   
+}
